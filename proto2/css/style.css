@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Sono', sans-serif;
+
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    font-size: 1.25em;
+}
+
+.color-acento{ color: orange;}
+
+button{
+    font-size: 2ems;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(0,0,0,0.5 );
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5 );  
+    color: white;
+    background-color: orange;
+
+}
+
+button:hover{
+    background-color: orange;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: orange;}
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: orange;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(180, 177, 177);
+
+}
+
+header a:hover{
+    color: rgb(228, 130, 3);
+}
+
+/*error en imagen url (solucionado)*/
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)),
+    url("../img/aa.gif");   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;     
+}
+
+#hero h1{
+    color: orange;
+    }
+
+
+    #somos-pkg .container{
+        text-align: center;
+        padding: 200px 12px;        
+    }
+
+    #nuestros-catalogos{
+        background-color: rgb(30,30,30);
+        color: white;
+        text-align: center;
+    }
+
+    #nuestros-catalogos .container{
+        padding: 150px 0px;        
+    }
+
+    #nuestros-catalogos h2{
+        margin-top: 0;
+    }
+
+    #nuestros-catalogos p{
+        display: none;
+    }
+
+    #nuestros-catalogos .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 15px;
+
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/extras/pc.jpg")
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/extras/ps4.jpg")
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/extras/xb.jpg")
+    }
+
+    #caracteristicas .container{
+        text-align: center; 
+        padding: 200px;       
+    }
+
+    #caracteristicas li{
+        margin: 12px 0px;
+        font-weight: bold;
+    }
+
+    #compra-ya h2{
+        color: white;
+        font-size: 9vw;
+    }
+
+    #compra-ya{    
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+    url("../img/pumpkinjackrecupera_3091763b.jpg");   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;   
+    }
+    
+    #compra-ya button{
+        font-size: 5vw;
+    }
+
+
+
+    footer .container{
+        height: 150px;
+        color: rgb(63, 62, 62);
+        background-color: rgb(44, 44, 44);
+    }
+
+    @media (min-width: 720px){
+        header{
+            position: fixed;
+            width: 100%;
+        }
+
+
+        header .container{
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+
+        header nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 30px;
+        }
+
+        #somos-pkg .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        #somos-pkg .texto{
+            width: 50%;
+            max-width: 600px;
+            text-align: initial;
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        #somos-pkg h2{
+            margin-top: 0px;
+        }   
+
+        #somos-pkg .img-container{
+            background-image: url("../img/extras/ws_Halloween_pumpkin_1920x1440.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 500px;  
+            width: 400px;                       
+        
+        }
+
+        #nuestros-catalogos .programas{
+            display: flex;
+            justify-content: center;
+        }
+        
+        #nuestros-catalogos p{
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        #nuestros-catalogos h3{
+            margin-top: 0 ;
+        }
+
+        #neustros-catalogos .carta{
+            padding: 15px;
+            background-size: 100% 150px;
+            background-repeat: no-repeat;
+            background-position-y: 0;
+            background-color: rgba(50,50,50,50);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .carta:first-child{
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../img/extras/pc.jpg")
+        }
+    
+        .carta:nth-child(2){
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../img/extras/ps4.jpg")
+        }
+    
+        .carta:nth-child(3){
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../img/extras/xb.jpg")
+        }
+
+    
+
+        #caracteristicas .container{
+            text-align: initial;
+        }
+
+        #caracteristicas ul{
+            margin-left: 100px;
+        }
+
+        #compra-ya h2{
+            font-size: 5em;
+        }
+
+        #compra-ya button{
+            font-size: 2em;
+            margin-top: 50px;
+        }
+    }
+
+  
